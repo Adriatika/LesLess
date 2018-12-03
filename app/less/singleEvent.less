@@ -1,0 +1,62 @@
+@import "vars.less";
+.singleEvent{
+	display: block;
+	width: 100%;
+	box-sizing:border-box;		
+	padding:0.5em 0;
+	margin-bottom:1.5em;
+	border-bottom: 1px solid transparent;
+	background-color:lighten(@shareBgColor, 20%);
+	&::after{
+		display: block;
+		content:'';
+		clear: both;
+		width:100%;
+	}
+	&__img{
+		margin-right:1.5em;
+		display: block;
+		float: left;
+		&>img{
+			width:250px;
+			height:100px;
+			overflow: hidden;
+			object-fit:cover;
+		}
+	}
+	&__title>a{
+		font-size:1.2em;
+		line-height:1.3em;
+		font-weight:550;
+		text-transform:uppercase;
+		color:@inputCl;
+
+	}
+	& span{
+		display: block;
+	}
+	&__date{
+		color:@fontCl;
+		font-size:0.9em;
+		line-height:1.3em;
+		padding:0.5em 0;
+	}
+	&__city{
+		float: none;
+		font-size:1em;
+		color:@inputCl;
+		padding:0.5em 0;
+	}
+}
+@media screen and(max-width:576px){
+	.singleEvent{
+		text-align:center;
+		&__img{
+			display: block;
+			float:none;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+	}
+}

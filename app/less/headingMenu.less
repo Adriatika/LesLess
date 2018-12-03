@@ -1,0 +1,122 @@
+@import "vars.less";
+.headingMenu{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding:5px 5px;
+	background:@borderBgCl;
+	&__item{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin:0 5px;
+		}
+	&__anc{
+		font-size:1em;
+		text-transform:uppercase;
+		color:#ffffff;
+		&:hover{
+			color:lighten(@footerBgCl,20%);
+		}
+	}
+}
+.headingMenu__item>a{
+	font-size:1em;
+		text-transform:uppercase;
+		color:#ffffff;
+		&:hover{
+			color:lighten(@footerBgCl,20%);
+		}
+}
+.mainHeader__headingToggle, .mainHeader__lblHeadingTgl{
+	display: none;
+}
+@media screen and(max-width:1140px){
+	.headingMenu{
+		&__anc{
+			font-size: 0.8em;
+		}
+	}
+	.headingMenu__item>a{
+		font-size: 0.8em;
+	}
+}
+@media screen and(max-width:959px){
+	.mainHeader__lblHeadingTgl{
+		display: block;
+		cursor:pointer;
+		position: absolute;
+		width:30px;
+		height:30px;
+		content:'';
+		left:1%;
+		top:95px;
+		background: url('../img/burgerGreen2X.png')no-repeat 50% 50%;
+		background-size:108%;
+		background-color:#ffffff;
+	}
+	.headingMenu{
+		flex-direction:column;
+		align-items: flex-start;
+		justify-content: space-around;
+		box-sizing:border-box;
+		display: none;
+		&__item{
+			padding:0.5em 0.5em;
+			width:100%;
+			box-sizing: border-box;
+			background-color:rgba(255,255,255,0.2);
+			margin:0 0 0.5em 0;
+			&:first-of-type{
+				margin-top:0.5em;
+			}
+			&>a{
+				width:100%;
+				font-size:1em;
+				&:hover{
+					color:#ffffff;
+				}
+			}
+
+		}
+	}
+	.headingMenu__item>a{
+				width:100%;
+				font-size:1em;
+				&:hover{
+					color:#ffffff;
+				}
+	}
+	.mainHeader__headingToggle:checked ~ .headingMenu{
+		display: flex;
+	}
+	.mainHeader__headingToggle:checked ~ .mainHeader__lblHeadingTgl{
+		background-color:@borderBgCl;
+	}
+
+}
+@media screen and(max-width:660px){
+	.headingMenu{
+		position: relative;
+		z-index:30;
+		top:-72px;
+	}
+	.mainHeader__lblHeadingTgl{
+		left:5%;
+		background:url("../img/burgerWhite2X.png") no-repeat 50% 50%;
+		background-size:107%;
+		background-color: @borderBgCl;
+	}
+	.mainHeader__headingToggle:checked ~ .mainHeader__lblHeadingTgl{
+		background-color:@textDecoCl;
+	}
+
+	}
+	@media screen and(max-width:576px){
+				.headingMenu{
+					top:0px;
+				}
+	}

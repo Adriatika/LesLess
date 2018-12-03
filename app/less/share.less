@@ -1,0 +1,44 @@
+@import "vars.less";
+.share{
+	margin-bottom:2.1em;
+	clear: both;
+	&__item{
+		display: inline-block;
+		width:30px;
+		height: 30px;
+		content:'';
+		margin-right:1em;
+		
+	}
+	& #sharePocket{
+		background: url('../img/pocket.svg') no-repeat 50% 50%;
+		width:88px;
+		background-color:@shareBgColor;
+		&:hover{
+			background-color:@textDecoCl;
+		}
+	}
+	& #shareVk{
+		background: url('../img/shareVk.svg') no-repeat 50% 50%;
+		background-color:@shareBgColor;
+		&:hover{
+			background-color:@textDecoCl;
+		}
+	}
+	& #shareFb{
+		background: url('../img/shareFb.svg') no-repeat 50% 50%;
+		background-color:@shareBgColor;
+		&:hover{
+			background-color:@textDecoCl;
+		}
+	}
+	& #sharePrint{
+		background: url('../img/print.svg') no-repeat 50% 50%;
+		background-color:@shareBgColor;
+
+		&:hover{
+			background-color:@textDecoCl;
+		}
+
+	}
+}

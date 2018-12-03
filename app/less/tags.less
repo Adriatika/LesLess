@@ -1,0 +1,62 @@
+@import "vars.less";
+.tags{
+	display: flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	align-items:center;
+	font-size:1em;
+	margin-bottom:1.5em;
+	&__tagLabel{
+		font-size:16px;
+		text-transform:uppercase;
+		padding:0.1em 0.3em;
+		color:#ffffff;
+		background-color: @borderBgCl;
+	}
+	.post &__tagList{
+		display: flex;
+		flex-direction:row;
+		justify-content: flex-start;
+		flex-wrap:wrap;
+		padding: 0;
+		margin: 0;
+	}
+	.post &__tagItem{
+		display: flex;
+		margin:0.5em 0 0.5em 0.8em;
+		flex-direction:column;
+		justify-content: space-around;
+		vertical-align: middle;
+		list-style: none;
+		margin-left:0.8em;
+		padding:0.2em 0.3em;
+		border:1px solid @shareBgColor;
+		&:hover{
+			color:@inputCl;
+			border:1px solid @borderBgCl;
+		}
+	}
+	&__tagAnc{
+		line-height:1.2em;
+		font-size:16px;
+		color:@fontCl;
+		text-transform:lowercase;
+		height:100%;
+	}
+}
+@media screen and(max-width:1140px){
+	.tags{
+		&__tagAnc{
+			font-size: 0.7em;
+		}
+		&__tagLabel{
+			font-size:0.8em;
+		}
+	}
+}
+
+@media screen and(max-width:576px){
+	.tags{
+		display: none;
+	}
+}

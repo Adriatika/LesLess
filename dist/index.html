@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Леснойкомплекс.рф</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header" id="upAnc">
+			<div class="mainHeader">
+				<input type="checkbox"  id="topBurger"  class="mainHeader__chkBurger">
+				<label class="mainHeader__burger" for="topBurger"></label>
+				<ul class="mainHeader__menu">
+					<li class="mainHeader__item"><a href="#">О проекте</a></li>
+					<li class="mainHeader__item"><a href="archive.html">Архив номеров</a></li>
+					<li class="mainHeader__item"><a href="#">Контакты</a></li>
+					<li class="mainHeader__item"><a href="#">Фотогалерея</a></li>
+					<li class="mainHeader__item"><a href="eventsSidebar.html">Мероприятия</a></li>
+				</ul>
+				<a href="index.html" class="mainHeader__logo">
+					<img src="img/logo2.svg" alt="Леснойкомплекс.рф">
+				</a>	
+				<div class="mainHeader__social">
+						<input type="checkbox" class="mainHeader__visionForm" id="visionForm"><label for="visionForm" class="mainHeader__lblSearchForm"></label>
+					<form class="mainHeader__searchForm" id="searchform" action="">
+						<input type="text" name="searchField" id="searchtext" class="mainHeader__searchField">
+						<input type="submit" name="searchButton" id="searchsubmit" class="mainHeader__searchSubmit" value="">
+					</form>
+					<div class="mainHeader__networks">
+						<a href="#" class="mainHeader__netIcon" id="home"></a>
+						<a href="#" class="mainHeader__netIcon" id="ytb"></a>
+						<a href="#" class="mainHeader__netIcon" id="fb"></a>
+						<a href="#" class="mainHeader__netIcon" id="vk"></a>
+					</div>
+				</div>
+			</div>
+			<div class="hatch"></div>
+			<input type="checkbox" class="mainHeader__headingToggle" id="headingToggle"><label for="headingToggle" class="mainHeader__lblHeadingTgl"></label>
+			<ul class="headingMenu">
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Лесозаготовка</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Обработка и станки</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Биоэнергетика</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Сушка древесины</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Домострой</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Развитие ЛПК</a></li>
+				<li class="headingMenu__item"><a href="#" class="headingMenu__anc">Защита леса</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<main class="content">
+				<h2 class="content__title"><a href="category.html">Новости</a></h2>
+				<div class="slider">
+					<input type="radio" id="tg1" class="slider__check" name="sldr" checked>
+					<input type="radio" id="tg2" class="slider__check" name="sldr">
+					<input type="radio" id="tg3" class="slider__check" name="sldr">
+					<input type="radio" id="tg4" class="slider__check" name="sldr">
+					<input type="radio" id="tg5" class="slider__check" name="sldr">
+					<div class="slider__controls">
+						<label for="tg1" class="slider__toggle"></label>
+						<label for="tg2" class="slider__toggle"></label>
+						<label for="tg3" class="slider__toggle"></label>
+						<label for="tg4" class="slider__toggle"></label>
+						<label for="tg5" class="slider__toggle"></label>
+					</div>
+					<div class="slide slide1">
+						<div class="slide__holder"></div>
+						<article class="slide__promo">
+							<h3 class="slide__title">
+								<a href="single.html" class="slide__anc">
+									Интерактивный диалог алтайских властей и лесохозяйственников
+								</a>
+							</h3>
+							<span class="slide__date">30 февраля 2018</span>
+							<a href="single.html" class="slide__text">По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). </a>
+						</article>
+						<a href="single.html" class="slide__ancImg" style="background-image:url(https://picsum.photos/600/400/?gravity=east);">
+							<span>30 мая 2018</span>
+						</a>
+					</div>
+					<div class="slide slide2">
+						<article class="slide__promo">
+							<h3 class="slide__title">
+								<a href="" class="slide__anc">
+									Это второй слайд и заголовок тут будет коротким
+								</a>
+							</h3>
+							<span class="slide__date">30 февраля 2018</span>
+							<a href="single.html" class="slide__text">По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). </a>
+						</article>
+						<a href="#" class="slide__ancImg" style="background-image:url(https://picsum.photos/600/400/?gravity=north);">
+							<span>30 мая 2018</span>
+						</a>
+					</div>
+					<div class="slide slide3">
+						<div class="slide__holder"></div>
+						<article class="slide__promo">
+							<h3 class="slide__title">
+								<a href="" class="slide__anc">
+									 Почему двачеры так не любят башорг. Башорг никто не любит в принципе, 
+								</a>
+							</h3>
+							<span class="slide__date">30 февраля 2018</span>
+							<a href="single.html" class="slide__text">По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). </a>
+						</article>
+						<a href="#" class="slide__ancImg" style="background-image:url(https://picsum.photos/600/400/?gravity=west);">
+							<span>30 мая 2018</span>
+						</a>
+					</div>
+					<div class="slide slide4">
+						<div class="slide__holder"></div>
+						<article class="slide__promo">
+							<h3 class="slide__title">
+								<a href="" class="slide__anc">
+									Интерактивный диалог алтайских властей и лесохозяйственников
+								</a>
+							</h3>
+							<span class="slide__date">30 февраля 2018</span>
+							<a href="single.html" class="slide__text">По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). </a>
+						</article>
+						<a href="#" class="slide__ancImg" style="background-image:url(https://picsum.photos/600/300/?gravity=south);">
+							<span>30 мая 2018</span>
+						</a>
+					</div>
+					<div class="slide slide5">
+						<div class="slide__holder"></div>
+						<article class="slide__promo">
+							<h3 class="slide__title">
+								<a href="" class="slide__anc">
+									Интерактивный диалог алтайских властей и лесохозяйственников
+								</a>
+							</h3>
+							<span class="slide__date">30 февраля 2018</span>
+							<a href="single.html" class="slide__text">По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). </a>
+						</article>
+						<a href="#" class="slide__ancImg" style="background-image:url(https://picsum.photos/600/300/?gravity=east);">
+							<span>30 мая 2018</span>
+						</a>
+					</div>
+				</div>
+				<h2 class="content__title"><a href="">Лесозаготовка</a></h2>
+				<div class="dbbArts">
+					<a href="#" class="dbbArts__item" style="background:url('https://picsum.photos/600/400?image=1055')no-repeat 50% 50%; background-size:cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной участок, по которому расторгнут договор аренды, расположен на территории Чаинского лесничества...
+							</p>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item" style="background:url('https://picsum.photos/600/400?image=1035')no-repeat 50% 50%; background-size:cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo" >
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор...
+							</p>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="hrBnr">
+					<a href="#" class="hrBnr__anc">
+						<img src="https://picsum.photos/600/200?image=1045" class="hrBnr__img" alt="промобаннер">
+					</a>
+				</div>
+				<h2 class="content__title"><a href="#">Домострой</a></h2>
+				<div class="dbmArts">
+					<a href="#" class="dbmArts__item">
+						<div class="dbmArts__promo">
+							<h4 class="dbmArts__title">Гибридный харвестер готовится к выходу на российский рынок</h4>
+							<p class="dbmArts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis fuga nulla ea, unde ullam commodi voluptatem</p>
+							<span class="dbmArts__date">30 мая 2018</span>
+						</div>
+						<div class="dbmArts__img">
+							<img src="https://picsum.photos/600/400?image=1078" alt="мелкая картинка">
+							<span>30 мая 2018</span>
+						</div>	
+					</a>
+					<a href="#" class="dbmArts__item">
+						<div class="dbmArts__promo">
+							<h4 class="dbmArts__title">Гибридный харвестер готовится к выходу на российский рынок</h4>
+							<p class="dbmArts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis fuga nulla ea, unde ullam commodi voluptatem</p>
+							<span class="dbmArts__date">30 мая 2018</span>
+						</div>
+						<div class="dbmArts__img">
+							<img src="https://picsum.photos/600/400?image=992" alt="мелкая картинка">
+							<span>30 мая 2018</span>
+						</div>
+					</a>
+				</div>
+				<h2 class="content__title"><a href="#">Развитие ЛПК</a></h2>
+				<div class="dbbArts">
+					<a href="#" class="dbbArts__item" style="background: url('https://picsum.photos/600/400?image=851') no-repeat 50% 50%;background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30.05.2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item" style="background: url('https://picsum.photos/600/400?image=933') no-repeat 50% 50%; background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30.05.2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+				</div>
+				<h2 class="content__title"><a href="#">Обработка и станки</a></h2>
+				<div class="dbmArts">
+					<a href="#" class="dbmArts__item">
+						<div class="dbmArts__promo">
+							<h4 class="dbmArts__title">Далеко-далеко за словесными горами в стране, гласных и согласных</h4>
+							<p class="dbmArts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis fuga nulla ea, unde ullam commodi voluptatem</p>
+							<span class="dbmArts__date">30 мая 2018</span>
+						</div>
+						<div class="dbmArts__img">
+							<img src="https://picsum.photos/300/200?image=995" alt="мелкая картинка">
+							<span>17 мая 2018</span>
+						</div>	
+					</a>
+					<a href="#" class="dbmArts__item">
+						<div class="dbmArts__promo">
+							<h4 class="dbmArts__title">Гибридный харвестер готовится к выходу на российский рынок</h4>
+							<p class="dbmArts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus perspiciatis fuga nulla ea, unde ullam commodi voluptatem</p>
+							<span class="dbmArts__date">30 мая 2018</span>
+						</div>
+						<div class="dbmArts__img">
+							<img src="https://picsum.photos/600/400?image=913" alt="мелкая картинка" >
+							<span>30 мая 2018</span>
+						</div>
+					</a>
+				</div>
+				<h2 class="content__title"><a href="#">Защита леса</a></h2>
+				<div class="dbbArts">
+					<a href="#" class="dbbArts__item" style="background:url('https://picsum.photos/600/400?image=667') no-repeat 50% 50%; background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item"  style="background:url('https://picsum.photos/600/400?image=978') no-repeat 50% 50%; background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item"  style="background:url('https://picsum.photos/600/400?image=978') no-repeat 50% 50%; background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item"  style="background:url('https://picsum.photos/600/400?image=978') no-repeat 50% 50%; background-size: cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной ...   по которому расторгнут договор аренды, расположен на территории Чаинского лесничества. 
+							</p>
+						</div>
+					</a>
+				</div>
+				<h2 class="content__title"><a href="">Лесозаготовка</a></h2>
+				<div class="dbbArts">
+					<a href="#" class="dbbArts__item" style="background:url('https://picsum.photos/600/400?image=1055')no-repeat 50% 50%; background-size:cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo">
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор аренды лесного участка с ООО «Конкор» (г. Новосибирск). Лесной участок, по которому расторгнут договор аренды, расположен на территории Чаинского лесничества...
+							</p>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+						</div>
+					</a>
+					<a href="#" class="dbbArts__item" style="background:url('https://picsum.photos/600/400?image=1035')no-repeat 50% 50%; background-size:cover;">
+						<div class="dbbArts__cap"></div>
+						<div class="dbbArts__promo" >
+							<h3 class="dbbArts__title">
+								Интерактивный диалог алтайских властей и лесохозяйственников властей и лесохозяйственников
+							</h3>
+							<p class="dbbArts__text">
+								По сообщению Рослесхоза, решением Арбитражного суда Томской области 12 апреля  расторгнут договор...
+							</p>
+							<span class="dbbArts__date">
+								30 мая 2018
+							</span>
+						</div>
+					</a>
+				</div>
+			</main>
+			<aside class="sidebar">
+				<div class="events">
+					<h3 class="sidebar__title events__title">
+						Мероприятия
+					</h3>
+					<div class="events__row">
+						<div class="events__dates">04.09.2018 07.09.2018</div>
+						<a href="#" class="events__expl">XX специализированная выставка «ЭКСПОДРЕВ» в МВДЦ «Сибирь г. Красноярск
+						</a>
+					</div>
+					<div class="events__row">
+						<div class="events__dates">22.10.2018 25.10.2025</div>
+						<a href="#" class="events__expl">SibWoodExpo в СибЭкспоЦентре г. Иркутск</a>
+						</div>
+					<a href="#" class="events__btn">Календарь выставок</a>	
+				</div>
+				<div class="widgetMagazine">
+					<h3 class="sidebar__title widget__title widgetMagazine__title">
+						свежий номер
+					</h3>
+					<a href="#" class="widget__anchor" target="_blanc">
+						<img class ="widget__image" src="img/mag9.jpg" alt="журнал">
+					</a>
+					<a href="#" class="widgetMagazine__anc">Читать онлайн</a>
+					<a href="#" class="widgetMagazine__anc"> Скачать pdf</a>
+				</div>
+				<div class="foxAdd">
+					<a href="#" class="foxAdd__anc" target="_blanc" id="firstAdd">
+						<img src="img/mebel1.jpg" alt="comeAdds" class="foxAdd__img">
+					</a>
+				</div>
+				<div class="widgetBlock textwidget">
+					<a href="#" class="widget__anchor"><img src="img/Bohnenkamp_300x150_LesKompleks.gif" alt="" class="widget__image"></a>
+					<a href="#" class="widget__anchor"><img src="img/umids_ticket.gif" alt="" class="widget__image"></a>
+					<a href="#" class="widget__anchor"><img src="img/Bohnenkamp_300x150_LesKompleks.gif" alt="" class="widget__image"></a>
+					<a href="#" class="widget__anchor"><img src="img/Bohnenkamp_300x150_LesKompleks.gif" alt="" class="widget__image"></a>
+					<a href="#" class="widget__anchor"><img src="img/umids_ticket.gif" alt="" class="widget__image"></a>
+					<a href="#" class="widget__anchor"><img src="img/LESDM_18_200x100_stat.jpg" alt="" class="widget__img"></a>
+				</div>
+				<div class="foxAdd">
+					<a href="#" class="foxAdd__anc" traget="_blanc">
+						<img src="img/mebel1.jpg" alt="comeAdds" class="foxAdd__img">
+					</a>
+					<a href="" class="foxAdd__anc" traget="_blanc">
+						<img src="img/mebel1.jpg" alt="comeAdds" class="foxAdd__img">
+					</a>
+				</div>
+			</aside>
+		</div>
+		<a href="#upAnc" class="main__upArrow"></a>
+		<footer class="mainFooter">
+			<div class="mainFooter__social">
+				<span class="mainFooter__drt">присоединяйтесь:</span>
+				<div class="mainFooter__socRow">
+					<a href="#" class="mainFooter__socItem" id="fFb"></a>
+					<a href="#" class="mainFooter__socItem" id="fVk"></a>
+					<a href="#" class="mainFooter__socItem" id="fYotb"></a>
+				</div>
+			</div>
+			<div class="mainFooter__addrBlock">
+				<span class="mainFooter__address">
+					660068, Красноярск Мичурина, 3в оф. 405
+				</span>
+				<span class="mainFooter__phone">
+					+7 391 237 15 37
+				</span>
+				<span class="mainFooter__email">
+					dprom@pgmedia.ru
+				</span>
+			</div>
+			<div class="mainFooter__menu">
+				<ul class="mainFooter__nav">
+					<li class="mainFooter__menuItem"><a href="#"">О проекте</a></li>
+					<li class="mainFooter__menuItem"><a href="#"">Архив номеров</a></li>
+					<li class="mainFooter__menuItem"><a href="#"">Фотогалерея</a></li>
+					<li class="mainFooter__menuItem"><a href="#"">Мероприятия</a></li>
+					<li class="mainFooter__menuItem"><a href="#"">Контакты</a></li>
+				</ul>
+				<span class="mainFooter__copyright">
+					&copy; 2018-2019 PromoGroup Media
+				</span>
+			</div>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import "vars.less";
+
+.wp-pagenavi{
+	text-align: center;
+	width:100%;
+	box-sizing: border-box;
+	min-width: 300px;
+	margin-bottom:3.7em;
+	& span, & a{
+		display:inline-block;
+		padding:0.3em 0.3em;
+		margin-left:0.3em;
+		margin-top:0.5em;
+		width:25px;
+		height:25px;
+		color:#ffffff;
+		font-weight:550;
+		border-radius:2px;
+		line-height:24px;
+		text-align:center;
+		background-color:@calendarColor;	
+	}
+	& a:hover{
+		color:@calendarColor;
+		background-color:@promoBack;
+	}
+	& .current{
+		color:@calendarColor;
+		background-color:@promoBack;
+	}
+	
+}
+

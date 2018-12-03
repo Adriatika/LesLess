@@ -1,0 +1,45 @@
+@import "vars.less";
+
+.eventsSidebar{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	margin: 0 -0.5em 1.5em 0;
+	flex-wrap:wrap;
+	& img{
+		margin:0.5em 1em;
+		width:100px;
+		height: 100px;
+		object-fit:cover;
+	}
+}
+.map{
+	width:100%;
+	position: relative;
+	box-sizing: border-box;
+	margin:0 0 1.5em 0;
+	// & .mapHolder{
+	// 	content: '';
+	// 	width:100%;
+	// 	padding-top:50%;
+	// 	top:0;
+	// 	left:0;
+	// }
+	& iframe{
+		position: absolute;
+		top:0;
+		left:0;
+		max-width: 100%;
+		width:100%;
+		height: 100%;
+	}
+}
+
+ .eventDate{
+	display: block;
+	font-size:1em;
+	padding:0.5em 0.5em;
+	color:@slGeadcol;
+	background-color:rgba(157,245,200,0.1);
+	margin-bottom:1.5em;
+}

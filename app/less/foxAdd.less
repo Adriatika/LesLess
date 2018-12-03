@@ -1,0 +1,43 @@
+.foxAdd{
+	display: flex;
+	align-self:center;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	text-align:center;
+	&__anc{
+		margin-bottom: 3em;
+	}
+}
+@media screen and(max-width:959px){
+	.foxAdd{
+		display: flex;
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: space-around;
+		align-items: center;
+		padding:0 0.5em;
+		margin-bottom:2.5em;
+		&:first-of-type{
+			padding-top: 1.5em;
+		}
+		&__anc{
+			max-width:250px;
+			margin-bottom:0;
+			// &:first-of-type{
+			// 	margin-top:0.5em;
+			// }
+		}
+	}
+	#firstAdd{
+		margin-top:0.5em;
+	}
+}
+
+@media screen and(max-width:568px){
+	.foxAdd{
+		margin-bottom: 1em;
+		&__img:first-of-type{
+			margin-bottom:2.5em;
+		}
+	}
+}

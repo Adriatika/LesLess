@@ -1,0 +1,51 @@
+@import "vars.less";
+.widgetMagazine{
+	margin-bottom: 3em;
+	text-align:center;
+}
+.widgetMagazine__anc{
+	display: block;
+	text-align:center;
+	font-size:1.2em;
+	color:@borderBgCl;
+	text-decoration:underline;
+}
+@media screen and(max-width:1140px){
+	.widgetMagazine__anc{
+		font-size:1em;
+		line-height:1.9em;
+	}
+}
+@media screen and(max-width:959px){
+	.widgetMagazine{
+		max-width: 42%;
+		float: right;
+		text-align:left;
+		margin-left:7%;
+		&__anc{
+			text-align:left;
+			line-height:1.2em;
+		}
+	}
+}
+@media screen and(max-width:660px){
+	.widgetMagazine{
+		margin-left:4%;
+		margin-right:4%;
+	}
+}
+@media screen and(max-width:576px){
+	.widgetMagazine{
+		width: 100%;
+		max-width:none;
+		margin:0 0 3.5em 0;
+		float: none;
+		text-align:center;
+		&__title, .widget__title, sidebar__title{
+			margin-bottom: 1em;	
+		}
+		&__anc{
+			text-align:center;
+		}
+	}
+}

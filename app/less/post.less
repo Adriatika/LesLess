@@ -1,0 +1,326 @@
+@import "vars.less";
+.post{
+	width:100%;
+	box-sizing:border-box;
+	margin-bottom: 2.5em;
+	& img{
+		max-width: 100%;
+	}
+	&__mainTitle{
+				font-size:1.5em;
+				color:@fontHdCl;
+				width: 100%;
+				font-weight:bolder;
+				text-transform:uppercase;
+				border-bottom:2px solid @textDecoCl;
+	}
+	&__titleLow_Lvl2, .post h2{
+		font-size:1.4em;
+	}
+	&__titleLow_Lvl3, .post h3{
+		font-size:1.2em;
+	}
+	&__titleLow_Lvl4, .post h4{
+		font-size:1.1em;
+	}
+	&__titleLow_Lvl5, .post h5, &__titleLow_Lvl6, .post h6{
+		font-size:1em;
+	}
+
+	&__text, .pf-content p, .post p{
+		font-size: 1.1em;
+		line-height:1.5em;
+		color:@slGeadcol;
+		text-align:justify;
+		margin-bottom:1.5em;
+	}
+
+	&__imgLeft, .alignleft{
+		float:left;
+		margin:0 1.5em 1em 0;
+	}
+	&__imgRight, .alignright{
+		float:right;
+		margin:0 0 1em 1em;
+	}
+	&__imgCenter, .aligncenter{
+		margin:0 auto  1.2em auto;
+	}
+	img.aligncenter{
+		display: block;
+	}
+	& blockquote{
+		font-size:1em;
+		box-sizing:border-box;
+		padding:0.7em 0.7em 0.2em;
+		font-weight:550;
+		letter-spacing: -0.02em;
+		border-bottom:1px solid transparent;
+		background-color:@citeColor;
+		margin-bottom:1.5em;
+		color:@slGeadcol;
+		line-height:1.5em;
+		&::after{
+			display: block;
+			width:100%;
+			content: '';
+			clear: both;
+		}
+	}
+	& em{
+		font-style:italic;
+	}
+	& figure, .pf-content figure{
+		display:table;
+		margin:0;
+	}
+	& figure>img.alignleft, & figure>img.post__imgLeft, & figure>img.alignright, & figure>img.post__imgRight, & figure>img.aligncenter{
+		margin: 0;
+		display:table-row;
+	}
+	& figcaption{
+		display:table-caption;
+		caption-side:bottom;
+		text-align:left;
+		font-size:0.9em;
+		color:@figcaptColor;
+		clear:both;
+		font-style: italic;
+	}
+	&__text a, .post p a{
+		text-decoration:none;
+		font-weight:600;
+		color:@textDecoCl;
+		&:hover{
+			color:@borderBgCl;
+		}
+	}
+	& ul{
+		padding-left:2.5em;
+		margin-bottom: 1.5em;
+	}
+	& ol{
+		margin-bottom: 1.5em;
+	}
+	& ul li{
+		list-style:disc;
+	}
+	& li{
+		font-size:1.1em;
+		color:@slGeadcol;
+	}
+}
+p a{
+		text-decoration:none;
+		font-weight:600;
+		color:@textDecoCl;
+		&:hover{
+			color:@borderBgCl;
+		}
+	}
+div.wp-caption{
+	display:table;
+	width: auto!important;
+	max-width: 600px;
+	box-sizing: border-box;
+	overflow: hidden;
+	& img{
+		object-fit: cover;
+		max-width: none;
+	}
+}
+p.wp-caption-text{
+	display: block;
+	text-align:center;
+	font-size:0.8em;
+	color:@figcaptColor;
+	box-sizing: border-box;
+}
+.alignleft> p.wp-caption-text, .alignright> p.wp-caption-text{
+		display:table-caption;
+		caption-side:bottom;
+		text-align:left;
+		font-size:0.9em;
+		color:@figcaptColor;
+		clear:both;
+		font-style: italic;
+	}
+.post__title, .post h2, .post h3, .post h4, .post h5, .post h6{
+		display: flex;
+		box-sizing: border-box;
+		padding:0 0 4px 0;
+		font-weight:600;
+		border-bottom:2px solid @textDecoCl;
+		margin-bottom:1.2em;
+		text-indent:15px;
+		text-align: left;
+		color:@fontHdCl;
+		// word-break: break-all;
+		text-transform:uppercase;
+	}
+span.akcent{
+	display: block;
+	content:'';
+	width:100%;
+	box-sizing: border-box;
+	padding:0 0.2em;
+	height:2px;
+	margin-bottom:1.5em;
+	background-color:@footerBgCl;
+	color:transparent;
+	}
+	.post h2{
+		font-size:1.4em;
+	}
+	.post h3{
+		font-size:1.2em;
+	}
+	.post h4{
+		font-size:1.1em;
+	}
+	.post h5, .post h6{
+		font-size:1em;
+	}
+
+	div.wp-caption img{
+		max-width:100%;
+	}
+@media screen and(max-width:1140px){
+	.post{
+		&__mainTitle{
+			font-size:1.3em;
+			padding-bottom: 8px;
+		}
+		&__titleLow_Lvl2, .post h2{
+		font-size:1.1em;
+		}
+		&__titleLow_Lvl3, .post h3{
+		font-size:1em;
+		}
+		&__titleLow_Lvl4, .post h4{
+			font-size:0.9em;
+		}
+		&__titleLow_Lvl5, .post h5, &__titleLow_Lvl6, .post h6{
+			font-size:0.8em;
+		}
+		&__text{
+			font-size:1em;
+		}
+		& blockquote, & li{
+			font-size:1em;
+		}
+		&__title, .post h2, .post h3, .post h4, .post h5, .post h6{
+			padding:0 0 7px 0;
+		}
+	}
+	.post h2{
+		font-size:1.1em;
+		}
+	.post h3{
+		font-size:1em;
+		}
+	.post h4{
+			font-size:0.9em;
+		}
+	.post h5, .post h6{
+			font-size:0.8em;
+		}
+		
+	.post h2, .post h3, .post h4, .post h5, .post h6{
+			padding:0 0 7px 0;
+		}
+}
+@media screen and(max-width:940px){
+	.post{
+		&__text{
+		font-size: 1em;
+		}
+		& .aligncenter img{
+			max-width:90%;
+		}
+	}
+	.pf-content p, .post p{
+		font-size: 1em;
+		}	
+}
+
+@media screen and(max-width:660px){
+	.post{
+		&__title, .post h2, .post h3, .post h4, .post h5, .post h6{
+			display: block;
+			padding:0 0 0 0;
+			text-indent:0.2em;
+			clear: both;
+		}
+		& p, &__text{
+			font-size:1em;
+			text-align:left;
+		}
+		& blockquote, & li{
+			font-size:1.1em;
+		}
+	}
+	.post h2, .post h3, .post h4, .post h5, .post h6{
+			display: block;
+			padding:0 0 0 0;
+			text-indent:0.2em;
+			clear: both;
+		}
+		div.wp-caption{
+	max-width:80%;
+	float:none;
+	margin:0 auto 1.5em;
+	& img{
+		max-width: 100%;
+	}
+}
+}
+@media screen and(max-width:576px){
+	.post{
+		padding:0 0.5em;
+		box-sizing: border-box;
+		&__imgLeft, .alignleft,
+		&__imgRight, .alignright,
+		&__imgCenter, .aligncenter{
+			float:none;
+			margin:0 auto 1em;
+		}
+		&__mainTitle{
+			font-size:1.3em;
+			line-height:1.5em;
+		}
+		& p{
+			font-size:1.1em;
+			line-height:1.7em;
+			margin-bottom:2em;
+		}
+}
+	.post h2{
+				font-size:1.2em;
+				line-height:1.5em;
+			} 
+	.post h3{
+				font-size:1.1em;
+				line-height: 1.2em;
+			} 
+	.post h4, .post h5, .post h6{
+				font-size:1em;
+				line-height:1em;
+			}
+	.pf-content p{
+				font-size:1.1em;
+				line-height:1.7em;
+				margin-bottom:2em;
+		}
+	.post .alignleft, .post .center, .post .alignright{
+		margin-bottom: 2.5em;
+		display: block;
+		text-align: center;
+	}
+.alignleft> p.wp-caption-text, .alignright> p.wp-caption-text{
+		text-align:center;
+		width: 90%;
+	}
+
+}
+
