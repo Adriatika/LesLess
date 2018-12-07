@@ -69,6 +69,13 @@
   position: fixed;
   bottom: 25%;
   right: 10%;
+  -webkit-animation-name: vision;
+          animation-name: vision;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: block;
 }
 .main__upArrowDouble {
   margin-bottom: 2.5em;
@@ -78,7 +85,23 @@
   background: url('img/arrowUp.svg') no-repeat 50% 50%;
   -webkit-background-size: cover;
           background-size: cover;
-  display: none;
+  display: block;
+}
+@-webkit-keyframes vision {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes vision {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .wp-block-audio,
@@ -1365,16 +1388,6 @@ body {
   background: url('../img/arrowUp.svg') no-repeat 50% 50%;
   -webkit-background-size: cover;
           background-size: cover;
-}
-.main__upArrowDouble {
-  margin-bottom: 2.5em;
-  width: 2.5em;
-  height: 2.5em;
-  content: '';
-  background: url('../img/arrowUp.svg') no-repeat 50% 50%;
-  -webkit-background-size: cover;
-          background-size: cover;
-  display: none;
 }
 
 .mainFooter {

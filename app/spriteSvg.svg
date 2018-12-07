@@ -1,0 +1,8 @@
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+	<symbol id="burger" viewBox="0 0 49.2 49.2">
+		<rect class="bgBurger" width="49.2" height="49.2"/>
+		<rect class="bread" x="2.87" y="35.51" width="43.46" height="5.99" rx="1.29" ry="1.29"/>
+		<rect class="bread" x="2.87" y="21.6" width="43.46" height="5.99" rx="1.29" ry="1.29"/>
+		<rect class="bread" x="2.87" y="7.7" width="43.46" height="5.99" rx="1.29" ry="1.29"/>
+	</symbol>
+</svg>
