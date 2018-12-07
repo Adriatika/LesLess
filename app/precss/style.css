@@ -67,7 +67,7 @@
 
 .arrowPosition {
   position: fixed;
-  bottom: 5%;
+  bottom: 25%;
   right: 10%;
 }
 .main__upArrowDouble {
@@ -170,6 +170,7 @@ body {
   -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  width: 100%;
   padding: 2.5em 0;
 }
 .content {
@@ -1999,13 +2000,15 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  left: -15px;
+  left: -8px;
   cursor: pointer;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   content: '';
-  background: url("../img/index.png") no-repeat -123px -1543px;
+  background: url("../img/searchButton2X.png") no-repeat 50% 50%;
+  -webkit-background-size: 150% 150%;
+          background-size: 150%;
 }
 .mainHeader__networks {
   display: -webkit-box;
@@ -2814,6 +2817,13 @@ span.akcent {
 }
 div.wp-caption img {
   max-width: 100%;
+}
+.post p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #3f4e55;
+  text-align: justify;
+  margin-bottom: 1.5em;
 }
 @media screen and (max-width: 1140px) {
   .post__mainTitle {
