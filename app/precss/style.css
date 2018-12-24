@@ -615,9 +615,6 @@ body {
   font-size: 1.1em;
   line-height: 1.2em;
   text-transform: uppercase;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   color: #3f4e55;
   margin-bottom: 0.5em;
   position: relative;
@@ -1875,7 +1872,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 15px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -2046,11 +2043,6 @@ body {
 .mainHeader__netIcon#home {
   background: url(../img/index.png) no-repeat -12px -1482px;
 }
-.hatch {
-  min-height: 1em;
-  width: 100%;
-  background: url("../img/hatch.svg") repeat-x;
-}
 .custom-logo-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2076,6 +2068,7 @@ ul.sub-menu {
   display: none;
 }
 .mainHeader li {
+  margin-top: 0.9em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2090,6 +2083,13 @@ ul.sub-menu {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1em;
+  height: 2.5em;
+}
+.mainHeader li:hover > a {
+  color: #167340;
+}
+.mainHeader li.current-menu-item > a {
+  color: #167340;
 }
 .mainHeader li > a {
   font-size: 1em;
@@ -2131,13 +2131,24 @@ ul.sub-menu {
         -ms-flex-item-align: center;
             align-self: center;
     width: 100%;
-    max-height: 60px;
-    border-bottom: 16px solid #007b2d;
+    position: relative;
+    z-index: 100;
+    max-height: 80px;
     margin: 0 -1px;
+    background: url("../img/newLogo2.svg") no-repeat 50% 50%;
+  }
+  .mainHeader__logo::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 18px;
+    width: 100%;
+    content: '';
+    background-color: #178341;
   }
   .mainHeader__logo > img {
-    min-width: 318px;
-    margin: -10px auto 0;
+    display: none;
   }
   .mainHeader__menu {
     width: 100%;
@@ -2254,7 +2265,7 @@ ul.sub-menu {
     -webkit-flex-basis: 150px;
         -ms-flex-preferred-size: 150px;
             flex-basis: 150px;
-    background: url('../img/logo1.svg') no-repeat 50% 50%;
+    background: url('../img/logo.svg') no-repeat 50% 50%;
     border: none;
   }
   .mainHeader__logo::after {
@@ -2309,7 +2320,7 @@ ul.sub-menu {
     -webkit-flex-basis: 150px;
         -ms-flex-preferred-size: 150px;
             flex-basis: 150px;
-    background: url('../img/logo1.svg') no-repeat 50% 50%;
+    background: url('../img/newLogo.svg') no-repeat 50% 50%;
     border: none;
   }
   .custom-logo-link::after {
@@ -2915,6 +2926,9 @@ div.wp-caption img {
   .post blockquote,
   .post li {
     font-size: 1.1em;
+  }
+  .post figcaption {
+    width: 100%;
   }
   .post h2,
   .post h3,
@@ -3922,11 +3936,9 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
-sup {
-  vertical-align: text-top;
-}
+sup,
 sub {
-  vertical-align: text-bottom;
+  font-size: 0.7em;
 }
 input,
 textarea,

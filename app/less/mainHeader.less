@@ -12,13 +12,12 @@
 	.mainHeader{
 		display: flex;
 		width:100%;
-		padding:15px 10px 0 10px;
+		padding:5px 10px 0 10px;
 		flex-direction: row;
 		flex-wrap:nowrap;
 		justify-content: space-around;
 		align-items: center;
 		box-sizing:border-box; 
-
 		&__menu{
 			display: flex;
 			flex-direction: row;
@@ -118,11 +117,11 @@
 			}
 		}
 	}
-		.hatch{
-			min-height:1em;
-			width: 100%;
-			background:url("../img/hatch.svg") repeat-x;
-		}
+		// .hatch{
+		// 	min-height:1em;
+		// 	width: 100%;
+		// 	background:url("../img/hatch.svg") repeat-x;
+		// }
 		.custom-logo-link{
 			display: flex;
 			flex-basis: 300px;
@@ -135,6 +134,7 @@ ul.sub-menu{
 	display:none;
 }
 .mainHeader li{
+			margin-top:0.9em;
 			display: flex;
 			text-align:center;
 			width:calc(100/6 - 22px);
@@ -142,7 +142,14 @@ ul.sub-menu{
 			margin-right:10px;
 			align-items: center;
 			line-height:1em;
+			height: 2.5em;
 		}
+	.mainHeader li:hover>a{
+			color:#167340;
+		}
+	.mainHeader li.current-menu-item>a{
+		color:#167340;
+	}
 			.mainHeader li>a{
 				font-size:1em;
 				text-transform:lowercase;
@@ -177,12 +184,24 @@ ul.sub-menu{
 		&__logo{
 			align-self: center;
 			width:100%;
-			max-height: 60px;
-			border-bottom:16px solid @borderLogo;
+			position:relative;
+			z-index: 100;
+			max-height: 80px;
+			// border-bottom:16px solid @borderLogo;
 			margin:0 -1px;
+			background: url("../img/newLogo2.svg") no-repeat 50% 50%;
+			&::after{
+				display: block;
+				position:absolute;
+				bottom:0;
+				z-index: 1;
+				height: 18px;
+				width:100%;
+				content:'';
+				background-color:#178341;
+			}
 			&>img{
-			min-width:318px;
-			margin:-10px auto 0;
+			display: none;
 			}
 		}
 		&__menu{
@@ -284,7 +303,7 @@ ul.sub-menu{
 			max-height:none;
 			height: auto;
 			flex-basis: 150px;
-			background: url('../img/logo1.svg')no-repeat 50% 50%;
+			background: url('../img/logo.svg')no-repeat 50% 50%;
 			border:none;
 			&::after{
 				display: block;
@@ -334,7 +353,7 @@ ul.sub-menu{
 			max-height:none;
 			height: auto;
 			flex-basis: 150px;
-			background: url('../img/logo1.svg')no-repeat 50% 50%;
+			background: url('../img/newLogo.svg')no-repeat 50% 50%;
 			border:none;
 			&::after{
 				display: block;
