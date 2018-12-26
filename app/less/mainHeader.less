@@ -185,20 +185,16 @@ ul.sub-menu{
 			align-self: center;
 			width:100%;
 			position:relative;
-			z-index: 100;
-			max-height: 80px;
-			// border-bottom:16px solid @borderLogo;
+			max-height:80px;
 			margin:0 -1px;
-			background: url("../img/newLogo2.svg") no-repeat 50% 50%;
+			background-image:linear-gradient(to top, #178341 18px, #ffffff 18px, #ffffff);
 			&::after{
 				display: block;
 				position:absolute;
-				bottom:0;
-				z-index: 1;
-				height: 18px;
-				width:100%;
-				content:'';
-				background-color:#178341;
+				width: 100%;
+				height: 100%;
+				content: '';
+				background:url("../img/newLogo2.svg")no-repeat 50% 50%;
 			}
 			&>img{
 			display: none;
@@ -275,6 +271,7 @@ ul.sub-menu{
 			}
 		}
 		.mainHeader li{
+			align-self: center;
 			flex-basis:105px;
 			margin:0 5px;
 		}
@@ -302,13 +299,16 @@ ul.sub-menu{
 		&__logo{
 			max-height:none;
 			height: auto;
-			flex-basis: 150px;
-			background: url('../img/logo.svg')no-repeat 50% 50%;
+			flex-basis:150px;
+			z-index: 0;
+			background:url("../img/newLogo4.svg") no-repeat 50% 50%;
 			border:none;
+			width:90%;
 			&::after{
 				display: block;
 				content:'';
 				padding-top:10%;
+				background: none;
 			}
 			&>img{
 				display: none;
@@ -335,18 +335,20 @@ ul.sub-menu{
 		&__menu{
 			background-color:transparent;
 			justify-content:space-around;
-		}
-			
+		}	
 		&__item>a{
 			color:@fontCl;
 			margin: 0;
 			height: auto;
 		}
 		&__social{
-			left:90%;
+			left:93%;
+		}
+		&__lblHeadingTgl{
+			left:2%;
 		}
 		&__social, &__lblHeadingTgl{
-			top:102px;
+			top:120px;
 		}	
 	}
 	.custom-logo-link{
@@ -384,9 +386,7 @@ ul.sub-menu{
 			display:none;
 			z-index:100;
 		}
-		&__logo{
-			background-size:94%;
-		}
+		
 		&__item{
 			box-sizing:border-box;
 			display:block;
@@ -437,6 +437,7 @@ ul.sub-menu{
 		 	position: static;
 		 	align-self: flex-start;
 		 	margin-left: 4.75%;
+		 	margin-top: 1em;
 		 }
 		&__lblSearchForm{
 			cursor:pointer;
@@ -479,3 +480,4 @@ ul.sub-menu{
 			}
 		}
 }
+ 

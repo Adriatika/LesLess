@@ -57,6 +57,9 @@ body{
 			&__title:not(:nth-of-type(3)){
 				display: none;
 			}
+			&__title:not(:nth-of-type(4)){
+				display: none;
+			}
 			&__title:nth-of-type(1){
 				display: flex;
 			}
@@ -74,12 +77,15 @@ body{
 		.content{
 			&__title{
 				display: block;
-				margin-left:1.7em;
-				width:81%;
-				word-break: break-all;
+				margin-left:0.5em;
+				width:90%;
+				word-break:break-all;
 			}
 		}
 		html{
 			overflow-x: hidden;
+		}
+		.content>.inform{
+			margin-left:0.9em;
 		}
 	}

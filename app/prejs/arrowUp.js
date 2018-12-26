@@ -7,8 +7,6 @@ $('a[href*="#"]').click(function() {
 });
 $(window).scroll(function(){
   var clfx = $(".wrapper").height()-1450;
-  console.log("height = "+ clfx);
-  console.log($(window).scrollTop());
   if($(window).scrollTop()>300 && $(window).scrollTop()<clfx){
       $(".main__upArrowDouble").fadeIn();
     }

@@ -138,10 +138,11 @@
 	.headingMenu{
 		position: relative;
 		z-index:30;
-		top:-72px;
+		top:-42px;
 	}
 	.mainHeader__lblHeadingTgl{
 		left:5%;
+		z-index: 50;
 		background:url("../img/burgerWhite2X.png") no-repeat 50% 50%;
 		background-size:107%;
 		background-color: @borderBgCl;
@@ -149,8 +150,7 @@
 	.mainHeader__headingToggle:checked ~ .mainHeader__lblHeadingTgl{
 		background-color:@textDecoCl;
 	}
-
-	}
+}
 	@media screen and(max-width:576px){
 				.headingMenu{
 					top:0px;
