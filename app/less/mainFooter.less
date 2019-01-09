@@ -51,6 +51,9 @@
 		&>span{
 			padding:0.5em 0;
 			position: relative;
+			&.mainFooter__email{
+				padding:0.8em 0 0.5em;
+			} 
 			&::before{
 				display:block;
 				width:24px;
@@ -71,6 +74,7 @@
 	&__email::before{
 		background:url(../img/index.png) no-repeat -9px -1574px;
 	}
+	
 	&__menu{
 		display: flex;
 		flex-direction:column;
@@ -121,6 +125,14 @@
 		&__nav{
 			margin:0 -0.5em;
 		}
+		&__addrBlock{
+				&>span{
+					padding:0.5em 0;
+					&.mainFooter__email{
+						padding:0.5em 0;
+					} 
+				}
+			}
 	}
 	.mainFooter span.mainFooter__address::before{
 		top:0.9em;
@@ -128,6 +140,7 @@
 	.mainFooter__addrBlock > span.mainFooter__address::before{
 		top:15px;
 	}
+	
 }
 @media screen and(max-width:959px){
 	.mainFooter{

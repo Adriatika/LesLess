@@ -1485,6 +1485,9 @@ body {
   padding: 0.5em 0;
   position: relative;
 }
+.mainFooter__addrBlock > span.mainFooter__email {
+  padding: 0.8em 0 0.5em;
+}
 .mainFooter__addrBlock > span::before {
   display: block;
   width: 24px;
@@ -1579,6 +1582,12 @@ body {
 @media screen and (max-width: 1140px) {
   .mainFooter__nav {
     margin: 0 -0.5em;
+  }
+  .mainFooter__addrBlock > span {
+    padding: 0.5em 0;
+  }
+  .mainFooter__addrBlock > span.mainFooter__email {
+    padding: 0.5em 0;
   }
   .mainFooter span.mainFooter__address::before {
     top: 0.9em;
