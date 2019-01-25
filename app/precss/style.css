@@ -1097,6 +1097,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px 5px;
+  margin-top: 1em;
   background: #167340;
 }
 .headingMenu__item {
@@ -1957,8 +1958,8 @@ body {
 .mainHeader__item > a {
   font-size: 1em;
   text-transform: lowercase;
-  letter-spacing: -1px;
   color: #737a7d;
+  letter-spacing: ;
 }
 .mainHeader__logo {
   display: -webkit-box;
@@ -2065,6 +2066,7 @@ body {
 }
 .mainHeader__netIcon#home {
   background: url(../img/index.png) no-repeat -12px -1482px;
+  margin: 10px 5px;
 }
 .custom-logo-link {
   display: -webkit-box;
@@ -2117,7 +2119,6 @@ ul.sub-menu {
 .mainHeader li > a {
   font-size: 1em;
   text-transform: lowercase;
-  letter-spacing: -1px;
   color: #737a7d;
 }
 @media screen and (max-width: 1140px) {
@@ -2157,9 +2158,9 @@ ul.sub-menu {
     position: relative;
     max-height: 80px;
     margin: 0 -1px;
-    background-image: -webkit-linear-gradient(bottom, #178341 18px, #ffffff 18px, #ffffff);
-    background-image: -o-linear-gradient(bottom, #178341 18px, #ffffff 18px, #ffffff);
-    background-image: linear-gradient(to top, #178341 18px, #ffffff 18px, #ffffff);
+    background-image: -webkit-linear-gradient(bottom, #005338 18px, #ffffff 18px, #ffffff);
+    background-image: -o-linear-gradient(bottom, #005338 18px, #ffffff 18px, #ffffff);
+    background-image: linear-gradient(to top, #005338 18px, #ffffff 18px, #ffffff);
   }
   .mainHeader__logo::after {
     display: block;
@@ -2278,6 +2279,12 @@ ul.sub-menu {
   }
   .mainHeader__item > a {
     height: 40%;
+  }
+  .mainHeader li {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mainHeader li > a {
     height: 40%;
@@ -3865,6 +3872,7 @@ div.wp-caption img {
     display: -ms-flexbox;
     display: flex;
     width: 250px;
+    height: 125px;
   }
 }
 

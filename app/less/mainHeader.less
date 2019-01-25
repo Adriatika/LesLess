@@ -40,8 +40,8 @@
 			&__item>a{
 				font-size:1em;
 				text-transform:lowercase;
-				letter-spacing: -1px;
 				color:@fontCl;
+				letter-spacing:;
 			}
 		
 		&__logo{
@@ -114,6 +114,7 @@
 			}
 			&#home{
 				background: url(../img/index.png) no-repeat -12px -1482px;
+				margin:10px 5px;
 			}
 		}
 	}
@@ -153,7 +154,6 @@ ul.sub-menu{
 			.mainHeader li>a{
 				font-size:1em;
 				text-transform:lowercase;
-				letter-spacing: -1px;
 				color:@fontCl;
 			}
 @media screen and(max-width:1140px) {
@@ -187,7 +187,7 @@ ul.sub-menu{
 			position:relative;
 			max-height:80px;
 			margin:0 -1px;
-			background-image:linear-gradient(to top, #178341 18px, #ffffff 18px, #ffffff);
+			background-image:linear-gradient(to top, #005338 18px, #ffffff 18px, #ffffff);
 			&::after{
 				display: block;
 				position:absolute;
@@ -289,6 +289,9 @@ ul.sub-menu{
 	}
 	.mainHeader__item > a{
 		height:40%;
+	}
+	.mainHeader li{
+		justify-content: center;
 	}
 	.mainHeader li>a{
 		height:40%;
