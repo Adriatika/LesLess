@@ -2518,7 +2518,6 @@ ul.sub-menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-bottom: 1.5em;
-  border-bottom: 2px solid #31b44b;
   margin-bottom: 3em;
 }
 .newsSidebar__item {
@@ -2796,10 +2795,10 @@ div.wp-caption img {
      object-fit: cover;
   max-width: none;
 }
-p.wp-caption-text {
+.post p.wp-caption-text {
   display: block;
-  text-align: center;
-  font-size: 0.8em;
+  text-align: left;
+  font-size: 0.9em;
   color: #9d9d9d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3815,6 +3814,9 @@ div.wp-caption img {
   color: #646567;
   font-weight: bolder;
   text-transform: uppercase;
+}
+.widget__anchor {
+  margin-bottom: 1em;
 }
 .textwidget > a > img,
 .widget__image,
