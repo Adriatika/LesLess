@@ -2565,7 +2565,7 @@ ul.sub-menu {
 }
 .newsSidebar__promo {
   width: 90%;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -3804,7 +3804,8 @@ div.wp-caption img {
   text-align: center;
   margin-bottom: 3em;
 }
-.widget__title {
+.widget__title,
+.sidebar__title {
   text-align: left;
   display: inline-block;
   width: 100%;
